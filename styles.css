@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr, 8fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+/* Hero Banner Section */
+
+/* Hero Search Section */
+
+/* Nav Dashboard Section */
+
+/* Main Project Section */
+
+/* Github Widgets Section */
+
+/* Music and Todo Widgets Section */
+
+/* Footer */
