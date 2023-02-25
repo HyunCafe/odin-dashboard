@@ -2,65 +2,71 @@
 
 * {
   box-sizing: border-box;
-  color:rgb(241, 10, 10);
+  color: rgb(241, 10, 10);
+}
+
+body {
+  height: 100%;
+  margin: 0;
 }
 
 .container {
   display: grid;
-  grid-template-columns:.5fr 3fr;
-  grid-template-rows:repeat(auto-fit, minmax(300px, 1fr)) 4fr;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 7fr;
   grid-gap: 1em;
+  height: 100vh;
 }
 
 /* Hero Banner Section */
 .hero {
-    display: flex;
-    flex-direction: column;
-    background-image: url('assets/banner1.png');
-    background-size: cover;
-    grid-column: 2/3;
+  display: flex;
+  flex-direction: column;
+  background-image: url("assets/banner1.png");
+  background-size: cover;
+  grid-column: 2/3;
 }
 
 .quickview {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1.5em;
-    margin-right: 4em;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5em;
+  margin-right: 4em;
 }
 
 .quickview__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Hero Search Section */
 .hero__search {
-    display: flex;
+  display: flex;
 }
 
 .hero__search-input {
-    flex: 1;
+  flex: 1;
 }
 
 /* Nav Dashboard Section */
 .header {
-    background-color: rgb(177, 255, 187);
-    grid-row: 1/3;
+  background-color: rgb(177, 255, 187);
+  grid-row: 1/3;
 }
 
 .dashboard-nav {
-    display: flex;
-    justify-content: center;
-    border:2px red solid;
+  display: flex;
+  justify-content: center;
+  border: 2px red solid;
 }
+
 .nav-list {
-  
-  }
-  
+}
+
 /* Main Project Section */
 .main-section {
-    background-color: rgb(182, 253, 247);
+  background-color: rgb(182, 253, 247);
 }
 
 /* Github Widgets Section */
@@ -73,7 +79,7 @@
 
 /* Footer */
 .footer {
-    background-color: rgb(165, 165, 243);
-    grid-column: 1/3;
-    text-align: center;
+  background-color: rgb(165, 165, 243);
+  grid-column: 1/3;
+  text-align: center;
 }
