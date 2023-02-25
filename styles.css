@@ -1,3 +1,5 @@
+/* Global */
+
 * {
   box-sizing: border-box;
 }
@@ -5,20 +7,35 @@
 .container {
   display: grid;
   grid-template-columns: 2fr, 8fr;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr, 5fr;
   grid-gap: 20px;
 }
 
 /* Hero Banner Section */
+.hero {
+    grid-column: 2/3;
+}
 
 /* Hero Search Section */
+.hero__search {
+}
 
 /* Nav Dashboard Section */
+.header {
+}
 
 /* Main Project Section */
+.main-section {
+}
 
 /* Github Widgets Section */
+.main__widgets {
+}
 
 /* Music and Todo Widgets Section */
+.user-profile__sidebar {
+}
 
 /* Footer */
+.footer {
+}
