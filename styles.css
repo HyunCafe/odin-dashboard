@@ -2,24 +2,45 @@
 
 * {
   box-sizing: border-box;
+  color:rgb(241, 10, 10);
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) 4fr;
+  grid-template-columns:.5fr 3fr;
   grid-template-rows:repeat(auto-fit, minmax(300px, 1fr)) 4fr;
-  grid-gap: 20px;
+  grid-gap: 1em;
 }
 
 /* Hero Banner Section */
 .hero {
+    display: flex;
+    flex-direction: column;
     background-image: url('assets/banner1.png');
     background-size: cover;
     grid-column: 2/3;
 }
 
+.quickview {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5em;
+    margin-right: 4em;
+}
+
+.quickview__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Hero Search Section */
 .hero__search {
+    display: flex;
+}
+
+.hero__search-input {
+    flex: 1;
 }
 
 /* Nav Dashboard Section */
@@ -28,6 +49,15 @@
     grid-row: 1/3;
 }
 
+.dashboard-nav {
+    display: flex;
+    justify-content: center;
+    border:2px red solid;
+}
+.nav-list {
+  
+  }
+  
 /* Main Project Section */
 .main-section {
     background-color: rgb(182, 253, 247);
@@ -43,4 +73,7 @@
 
 /* Footer */
 .footer {
+    background-color: rgb(165, 165, 243);
+    grid-column: 1/3;
+    text-align: center;
 }
