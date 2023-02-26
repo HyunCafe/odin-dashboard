@@ -100,7 +100,7 @@ button {
 /* Nav Dashboard Section */
 .header {
   grid-row: 1/3;
-  background-color: rgba(245, 252, 255, 0.4);
+  background-color: rgba(236, 234, 245, 0.4);
   backdrop-filter: blur(15px);
   box-shadow: 2px 2px 20px 2px #828a8d;
   border: none;
