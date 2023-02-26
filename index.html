@@ -9,7 +9,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
@@ -35,7 +39,10 @@
         </ul>
 
         <div class="hero__search">
+          <span class="material-symbols-outlined"> search </span>
+
           <input class="hero__search-input" placeholder="Search..." />
+
           <div class="hero__search-icons">
             <img src="alert-icon.png" alt="Alert icon" />
             <img src="mailbox-icon.png" alt="Mailbox icon" />
@@ -49,32 +56,71 @@
       <header class="header">
         <nav class="dashboard-nav">
           <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="#">Dashboard</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Calender</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Mailbox</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Today's Tasks</a>
+              <a class="nav-link" href="#">
+                <i class="material-icons">dashboard</i>
+                Dashboard
+              </a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Github</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Primodo</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Youtube</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Settings</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="material-icons">event</i>
+                Calendar
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="material-icons">mail</i>
+                Mailbox
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="material-icons">check_box</i>
+                Today's Tasks
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="material-icons">code</i>
+                Github
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="material-icons">build</i>
+                Projects
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="material-icons">done_all</i>
+                Primodo
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="material-icons">video_library</i>
+                Youtube
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="material-icons">settings</i>
+                Settings
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
 
       <main class="main-section">
-
-
-
-        
         <section class="main__stats stats">
           <iframe
-          class="stats-graph"
-          src="https://github-readme-activity-graph.cyclic.app/graph?username=HyunCafe&custom_title=HyunCafe's%20GitHub%20Activity%20Graph&bg_color=CED0D8&color=909397&line=ced8d6&point=909397&area=true&hide_border=false"
-        ></iframe>
-        
+            class="stats-graph"
+            src="https://github-readme-activity-graph.cyclic.app/graph?username=HyunCafe&custom_title=HyunCafe's%20GitHub%20Activity%20Graph&bg_color=CED0D8&color=545858&line=ced8d6&point=909397&area=true&hide_border=false"
+          ></iframe>
+
           <ul class="main__project-list project-list">
             <li class="project-list__item">
               <a class="project-list__link" href="#">Project 1</a>
@@ -92,14 +138,18 @@
         </section>
 
         <section class="widgets">
-          <div class="widget-stats">      <iframe
-            src="https://github-readme-stats-i66v.vercel.app/api?username=HyunCafe&amp;show_icons=false&amp;title_color=545858&amp;text_color=545858&amp;iconcolor=545858&amp;hide_border=false&amp;bg_color=CED0D8&amp;border_radius=0&amp;count_private=true&amp;include_all_commits=true"
-          ></iframe></div>
-    
-          <div class="widget-contributions">        <iframe
-            src="https://streak-stats.demolab.com?user=HyunCafe&amp;theme=highcontrast&amp;hide_border=false&amp;border_radius=0&amp;ring=909397&amp;background=CED0D8&amp;fire=545858&amp;currStreakNum=545858&amp;dates=545858&amp;sideNums=545858&amp;currStreakLabel=545858&amp;stroke=545858&amp;sideLabels=545858"
-          ></iframe></div>
-          
+          <div class="widget-stats">
+            <iframe
+              src="https://github-readme-stats-i66v.vercel.app/api?username=HyunCafe&amp;show_icons=false&amp;title_color=545858&amp;text_color=545858&amp;iconcolor=545858&amp;hide_border=false&amp;bg_color=CED0D8&amp;border_radius=0&amp;count_private=true&amp;include_all_commits=true"
+            ></iframe>
+          </div>
+
+          <div class="widget-contributions">
+            <iframe
+              src="https://streak-stats.demolab.com?user=HyunCafe&amp;theme=highcontrast&amp;hide_border=false&amp;border_radius=0&amp;ring=909397&amp;background=CED0D8&amp;fire=545858&amp;currStreakNum=545858&amp;dates=545858&amp;sideNums=545858&amp;currStreakLabel=545858&amp;stroke=545858&amp;sideLabels=545858"
+            ></iframe>
+          </div>
+
           <div class="widget-dailydev"></div>
         </section>
 
