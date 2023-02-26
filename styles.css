@@ -1,13 +1,16 @@
 /* Global */
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
-  color: rgb(241, 10, 10);
 }
 
 body {
   height: 100%;
   margin: 0;
+  font-family: "Exo", sans-serif;
+  font-weight: 700;
+  color: #3a3a3a;
 }
 
 .container {
@@ -18,12 +21,28 @@ body {
   height: 100vh;
 }
 
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Hero Banner Section */
 .hero {
   display: flex;
   flex-direction: column;
-  background-image: url("assets/banner1.png");
-  background-size: cover;
   grid-column: 2/3;
   justify-content: space-between;
 }
@@ -52,30 +71,34 @@ body {
 
 /* Nav Dashboard Section */
 .header {
-  background-color: rgb(177, 255, 187);
   grid-row: 1/3;
+  background-color: transparent;
+  box-shadow: 2px 2px 20px 2px rgb(255, 255, 255);
+  backdrop-filter: blur(4px);
 }
 
 .dashboard-nav {
   display: flex;
   justify-content: center;
-  border: 2px red solid;
 }
 
 .nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2em;
+  gap: 2.5em;
 }
 
 /* Main Project Section */
 .main-section {
   display: grid;
-  background-color: rgb(182, 253, 247);
   grid-template-columns: 3fr 1fr 1fr;
 }
 
 .main__stats {
   display: grid;
   grid-template-rows: 1fr 2fr;
-  border: 2px red solid;
 }
 
 .stats-graph {
@@ -84,7 +107,6 @@ body {
 }
 
 .main__project-list {
-  border: 2px rgb(226, 91, 91) solid;
   display: grid;
   justify-items: center;
   grid-template: 1fr 1fr / 1fr 1fr;
@@ -95,7 +117,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 2px blue;
 }
 
 .widget-stats {
@@ -114,6 +135,10 @@ body {
 
 /* Music and Todo Widgets Section */
 .user-profile__sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* Footer */
