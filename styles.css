@@ -56,7 +56,7 @@ a {
   display: flex;
   justify-content: flex-end;
   gap: 1.5em;
-  margin-right: 4em;
+  margin: -5em 2.5em 0 0;
 }
 
 .quickview__item {
@@ -66,23 +66,19 @@ a {
 }
 
 .hero__welcome {
-  position: relative;
-  top: 2.5em;
-  left: 3em;
+  margin: 1em 0 0 2em;
 }
 
 .hero__quote {
-  position: relative;
   font-size: 1.3rem;
-  top: 1em;
-  left: 16em;
+  margin-left: 14em;
 }
 
 small {
   display: block;
   font-size: 60%;
   margin-top: 1em;
-  margin-left: 15em;
+  margin-left: 20em;
   text-align: center;
 }
 
@@ -166,7 +162,7 @@ button {
   display: grid;
   justify-items: center;
   grid-template: 1fr 1fr / 1fr 1fr;
-  margin: 1em 2em 0 0;
+  margin: -2em 2em 0 0;
 }
 
 .project-list__item {
@@ -178,32 +174,37 @@ button {
 }
 
 .project-list__title {
-  margin-top: 1em;
+  margin-bottom: 0.6em;
   font-size: 1.3rem;
 }
 
 .project-list__img {
   width: 25em;
 }
+
 /* Github Widgets Section */
 .widgets {
   display: flex;
   flex-direction: column;
   align-content: center;
+  justify-content: center;
 }
 
 .widget-stats {
   width: 100%;
 }
 
-.widget-contributions {
+.user-tasks__list {
+  display: flex;
+  margin-left: 0.3em;
+  border-radius: 8px;
+  width: 18.5em;
 }
 
-.devcard {
+.user-tasks__list iframe {
+  border: 0;
   width: 100%;
-}
-
-.widget-dailydev {
+  height: 33em;
 }
 
 /* Music and Todo Widgets Section */
@@ -216,8 +217,7 @@ button {
 
 .spotify-playlist {
   width: 19em;
-  height: 30em;
-  margin-top: -4em;
+  height: 50em;
 }
 
 .spotify-playlist iframe {
