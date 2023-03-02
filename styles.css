@@ -150,25 +150,34 @@ button {
   height: 12.85em;
 }
 
-.main__project-list {
+.project-list {
   display: grid;
   justify-items: center;
   grid-template: 1fr 1fr / 1fr 1fr;
-  /* border: 2px solid red; */
-  margin-top: 1em;
+  margin: 1em 2em 0 0;
 }
 
 .project-list__item {
   display: flex;
-  align-items: center;
-  /* border: 2px solid blue; */
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }
 
+.project-list__title {
+  margin-top: 1em;
+  font-size: 1.3rem;
+}
+
+.project-list__img {
+  width: 25em;
+}
 /* Github Widgets Section */
 .widgets {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
 }
 
 .widget-stats {
