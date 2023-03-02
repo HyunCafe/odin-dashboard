@@ -13,6 +13,7 @@ body {
   font-family: "Exo", sans-serif;
   font-weight: 700;
   color: #545858;
+  line-height: 1.4em;
 }
 
 video {
@@ -51,16 +52,6 @@ a {
   box-shadow: 2px 2px 20px 2px #828a8d;
 }
 
-.hero video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
 .quickview {
   display: flex;
   justify-content: flex-end;
@@ -72,6 +63,27 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.hero__welcome {
+  position: relative;
+  top: 2.5em;
+  left: 3em;
+}
+
+.hero__quote {
+  position: relative;
+  font-size: 1.3rem;
+  top: 1em;
+  left: 16em;
+}
+
+small {
+  display: block;
+  font-size: 60%;
+  margin-top: 1em;
+  margin-left: 15em;
+  text-align: center;
 }
 
 /* Hero Search Section */
@@ -200,6 +212,17 @@ button {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+.spotify-playlist {
+  width: 19em;
+  height: 30em;
+  margin-top: -4em;
+}
+
+.spotify-playlist iframe {
+  width: 100%;
+  height: 100%;
 }
 
 /* Footer */

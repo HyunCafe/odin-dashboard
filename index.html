@@ -27,6 +27,9 @@
           Welcome, <strong>Hyun</strong>
           <p class="hero__subtitle">Another day of Grinding, Let's Go!</p>
         </h1>
+        <blockquote class="hero__quote">
+          "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle."<small>- Steve Jobs</small>
+        </blockquote>
         <ul class="quickview">
           <li class="quickview__item">
             <span class="quickview__item-total">3</span>
@@ -48,9 +51,10 @@
           <input class="hero__search-input" placeholder="Search..." />
 
           <div class="hero__search-icons">
-            <img src="alert-icon.png" alt="Alert icon" />
-            <img src="mailbox-icon.png" alt="Mailbox icon" />
+            <i class="material-icons">notifications</i>
+            <i class="material-icons">mail_outline</i>
           </div>
+          
           <button class="hero__search-button">Button1</button>
           <button class="hero__search-button">Button2</button>
           <button class="hero__search-button">Button3</button>
@@ -129,28 +133,28 @@
             <li class="project-list__item">
               <a class="project-list__link" href="https://github.com/HyunCafe/odin-etchasketch">
                 <h2 class="project-list__title">Etch-a-Sketch</h2>
-                <img class="project-list__img" src="assets/etchasketch.gif" alt="Etch-a-Sketch" />
+                <img class="project-list__img" src="assets/etchasketch.gif" alt="Etch-a-Sketch" loading="lazy" />
               </a>
             </li>
             <li class="project-list__item">
               <a class="project-list__link" href="https://github.com/HyunCafe/odin-signupform">
                 <h2 class="project-list__title">Sign-up Form</h2>
-                <img class="project-list__img" src="assets/signupform.gif" alt="Admin Dashboard" />
+                <img class="project-list__img" src="assets/signupform.gif" alt="Sign-up Form" loading="lazy" />
               </a>
             </li>
             <li class="project-list__item">
               <a class="project-list__link" href="https://github.com/HyunCafe/odin-calculator">
                 <h2 class="project-list__title">Calculator</h2>
-                <img class="project-list__img" src="assets/calculator.gif" alt="Calculator" />
+                <img class="project-list__img" src="assets/calculator.gif" alt="Calculator" loading="lazy" />
               </a>
             </li>
             <li class="project-list__item">
               <a class="project-list__link" href="https://github.com/HyunCafe/odin-dashboard">
                 <span class="project-list title"> Dashboard </span>
-                <img class="project-list__img" src="assets/.gif" alt="Dashboard" />
+                <img class="project-list__img" src="assets/.gif" alt="Personal Dashboard" loading="lazy" />
               </a>
             </li>
-          </ul>
+          </ul>     
         </section>
 
         <section class="widgets">
@@ -172,7 +176,8 @@
         </section>
 
         <aside class="user-profile__sidebar">
-          <div class="spotify-playlist">Spotify Widget or Pic itself</div>
+          <div class="spotify-playlist"><iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn" loading="lazy" ></iframe>
+          </div>
           <div class="user-tasks__list">
             Maybe make a todo list or just an image
           </div>
