@@ -1,4 +1,4 @@
-# odin-dashboard
+# odin-dashboard (10 weeks into my coding journey)
 The Odin Dashboard project is a versatile and visually appealing web dashboard designed using Figma, with a focus on responsive design and enhanced user experience. The project showcases the ability to work with well-organized HTML and CSS files, following the BEM naming convention. It highlights the implementation of various features, such as material icons in the navigation bar, a video theme background, and lazy loading to optimize page load times. Additionally, it demonstrates the integration of diverse widgets, including a Spotify widget, and Trello todo list, reflecting a wide range of skills and catering to users with different preferences.
 
 
