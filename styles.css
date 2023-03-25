@@ -235,3 +235,42 @@ button {
   margin: 0 auto;
   z-index: 0;
 }
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1850px) {
+  * {
+    font-size: 0.9rem;
+  }
+
+  .hero__quote {
+    font-size: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 1500px) {
+  * {
+    font-size: 0.7rem;
+  }
+
+  .hero__quote {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  * {
+    font-size: 0.5rem;
+  }
+.dashboard-nav {
+  height: 100vh;
+}
+  .hero {
+    width: 100%;
+  }
+  .hero__quote {
+    font-size: .7rem;
+  }
+}
