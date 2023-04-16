@@ -30,7 +30,7 @@ video {
   display: grid;
   grid-template-columns: 1fr 6fr;
   grid-template-rows: minmax(12em, 1fr) 4fr;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 a {
@@ -114,20 +114,19 @@ button {
   border: none;
   margin-bottom: -30px;
 }
-
 .dashboard-nav {
   display: flex;
   justify-content: center;
+  height: 100%;
 }
-
 .nav-list {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 2em;
   gap: 2.5em;
+  flex: 1;
 }
-
 .material-icons {
   transform: translateY(5px);
 }
@@ -264,13 +263,20 @@ button {
   * {
     font-size: 0.5rem;
   }
-.dashboard-nav {
-  height: 100vh;
-}
   .hero {
     width: 100%;
   }
   .hero__quote {
     font-size: .7rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-rows: minmax(12em, auto) 4fr;
+  }
+  .dashboard-nav {
+    height: auto;
+    min-height: 100vh;
   }
 }
