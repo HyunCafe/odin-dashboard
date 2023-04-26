@@ -1,6 +1,7 @@
 /* Global */
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+/* --------------------------------- Global styles ------------------------------------ */
 
 * {
   box-sizing: border-box;
@@ -39,7 +40,7 @@ a {
   text-shadow: 2px 2px 2px 2px #fffeff;
 }
 
-/* Hero Banner Section */
+/* --------------------------------- Hero banner styles ------------------------------------ */
 .hero {
   position: relative;
   display: flex;
@@ -105,20 +106,30 @@ button {
   margin: 0.4em;
 }
 
-/* Nav Dashboard Section */
+/* --------------------------------- Nav Dashboard styles ------------------------------------ */
+
 .header {
-  grid-row: 1/3;
-  background-color: rgba(236, 234, 245, 0.4);
-  backdrop-filter: blur(15px);
-  box-shadow: 2px 2px 20px 2px #828a8d;
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
   border: none;
-  margin-bottom: -30px;
 }
+
 .dashboard-nav {
-  display: flex;
-  justify-content: center;
-  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 13%;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
+
 .nav-list {
   display: flex;
   flex-direction: column;
@@ -127,6 +138,7 @@ button {
   gap: 2.5em;
   flex: 1;
 }
+
 .material-icons {
   transform: translateY(5px);
 }
@@ -139,60 +151,39 @@ button {
   padding-left: 25px;
 }
 
-/* Main Project Section */
+/* --------------------------------- Main Section styles ------------------------------------ */
 .main-section {
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
-  margin-top: 1em;
+  grid-template-columns: 1fr 3fr 1fr;
+  padding: 2em;
 }
 
-.main__stats {
+.content-container {
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 3fr 1fr;
+  gap: 1em;
 }
 
-.stats-graph {
-  margin-top: 1.1em;
-  width: 100%;
-  height: 12.85em;
-}
-
-.project-list {
-  display: grid;
-  justify-items: center;
-  grid-template: 1fr 1fr / 1fr 1fr;
-  margin: -2em 2em 0 0;
-}
-
-.project-list__item {
+.left-column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  gap: 1em;
+}
+
+/* --------------------------------- Github Widget styles ------------------------------------ */
+
+.widgets-container {
   text-align: center;
 }
 
-.project-list__title {
-  margin-bottom: 0.6em;
-  font-size: 1.3rem;
-}
-
-.project-list__img {
-  width: 25em;
-  height: 13em;
-}
-
-/* Github Widgets Section */
 .widgets {
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
 }
 
-.widget-stats {
-  width: 100%;
-}
+.widgets__graph {}
+
+.widgets__stats,
+.widgets__contributions {}
 
 .user-tasks__list {
   display: flex;
@@ -201,23 +192,45 @@ button {
   width: 18.5em;
 }
 
-.user-tasks__list iframe {
-  border: 0;
-  width: 100%;
-  height: 33em;
+.project-list {
+  display: grid;
+  justify-items: center;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  margin: 2em 2em 0 0;
 }
 
-/* Music and Todo Widgets Section */
-.user-profile__sidebar {
+.project-list__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 1em;
+}
+
+.project-list__title {
+  margin-bottom: 0.6em;
+  font-size: 1.3rem;
+}
+
+.project-list__img {
+  width: 100%;
+  height: 20em;
+}
+
+/* --------------------------------- Spotify/Trello Widget styles ------------------------------------ */
+
+.user-profile-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding-left: 2em;
 }
 
 .spotify-playlist {
-  width: 19em;
-  height: 50em;
+  width: 100%;
+  height: 100%;
 }
 
 .spotify-playlist iframe {
@@ -225,7 +238,16 @@ button {
   height: 100%;
 }
 
-/* Footer */
+.user-tasks__list iframe {
+  padding-top: 1em;
+  border-radius: 15px;
+  border: 0;
+  width: 110%;
+  height: 33em;
+}
+
+/* --------------------------------- Footer styles ------------------------------------ */
+
 .footer {
   background-color: rgba(245, 252, 255, 0);
   grid-column: 1/3;
@@ -235,8 +257,7 @@ button {
   z-index: 0;
 }
 
-
-/* Media Queries */
+/* --------------------------------- Media Queries styles ------------------------------------ */
 
 @media screen and (max-width: 1850px) {
   * {
@@ -248,14 +269,13 @@ button {
   }
 }
 
-
 @media screen and (max-width: 1500px) {
   * {
     font-size: 0.7rem;
   }
 
   .hero__quote {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -263,11 +283,13 @@ button {
   * {
     font-size: 0.5rem;
   }
+
   .hero {
     width: 100%;
   }
+
   .hero__quote {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -275,6 +297,7 @@ button {
   .container {
     grid-template-rows: minmax(12em, auto) 4fr;
   }
+
   .dashboard-nav {
     height: auto;
     min-height: 100vh;
