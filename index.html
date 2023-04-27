@@ -1,34 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Page Title</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <video autoplay loop muted loading="lazy">
-      <source src="assets/milkvid1.mp4" type="video/mp4" />
-    </video>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Page Title</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <div class="container">
-      <header class="hero">
+<body>
+  <video autoplay loop muted loading="lazy">
+    <source src="assets/milkvid1.mp4" type="video/mp4" />
+  </video>
+
+  <div class="container">
+
+      <nav class="dashboard-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="material-icons">dashboard</i>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="material-icons">event</i>
+              Calendar
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="material-icons">mail</i>
+              Mailbox
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="material-icons">check_box</i>
+              Today's Tasks
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="material-icons">code</i>
+              Github
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="material-icons">build</i>
+              Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="material-icons">done_all</i>
+              Primodo
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="material-icons">video_library</i>
+              Youtube
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="material-icons">settings</i>
+              Settings
+            </a>
+          </li>
+        </ul>
+      </nav>
+ 
+      <div class="content-wrapper">
+
+    <main class="main-section">
+      <section class="hero">
         <h1 class="hero__welcome">
           Welcome, <strong>Hyun</strong>
           <p class="hero__subtitle">Another day of Grinding, Let's Go!</p>
         </h1>
         <blockquote class="hero__quote">
-          "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle."<small>- Steve Jobs</small>
+          "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't
+          settle."<small>- Steve Jobs</small>
         </blockquote>
         <ul class="quickview">
           <li class="quickview__item">
@@ -47,103 +107,36 @@
 
         <div class="hero__search">
           <span class="material-symbols-outlined"> search </span>
-
           <input class="hero__search-input" placeholder="Search..." />
 
           <div class="hero__search-icons">
             <i class="material-icons">notifications</i>
             <i class="material-icons">mail_outline</i>
           </div>
-          
+
           <button class="hero__search-button">Button1</button>
           <button class="hero__search-button">Button2</button>
           <button class="hero__search-button">Button3</button>
         </div>
-      </header>
+      </section>
+      <div class="content-container">
+        <div class="left-column">
+          <div class="widgets-container">
+            <img class="widgets__graph"
+              src="https://github-readme-activity-graph.cyclic.app/graph?username=HyunCafe&custom_title=HyunCafe's%20GitHub%20Activity%20Graph&bg_color=f5fcff&color=545858&line=ced8d6&point=909397&area=true&hide_border=false">
 
-      <header class="header">
-        <nav class="dashboard-nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="material-icons">dashboard</i>
-                Dashboard
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="material-icons">event</i>
-                Calendar
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="material-icons">mail</i>
-                Mailbox
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="material-icons">check_box</i>
-                Today's Tasks
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="material-icons">code</i>
-                Github
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="material-icons">build</i>
-                Projects
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="material-icons">done_all</i>
-                Primodo
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="material-icons">video_library</i>
-                Youtube
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <i class="material-icons">settings</i>
-                Settings
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+            <div class="bottom-widgets-container">
+              <img class="widgets__stats"
+                src="https://github-readme-stats.vercel.app/api?username=HyunCafe&amp;show_icons=false&amp;title_color=545858&amp;text_color=545858&amp;iconcolor=545858&amp;hide_border=false&amp;bg_color=f5fcff&amp;border_radius=0&amp;count_private=true&amp;include_all_commits=true"
+                loading="lazy">
 
-      <main class="main-section">
-        <div class="content-container">
-          <div class="left-column">
-            <div class="widgets-container">
-              <img
-                class="widgets__graph"
-                src="https://github-readme-activity-graph.cyclic.app/graph?username=HyunCafe&custom_title=HyunCafe's%20GitHub%20Activity%20Graph&bg_color=f5fcff&color=545858&line=ced8d6&point=909397&area=true&hide_border=false"
-              >
-            
-              <div class="bottom-widgets-container">
-                <img class="widgets__stats"
-                  src="https://github-readme-stats.vercel.app/api?username=HyunCafe&amp;show_icons=false&amp;title_color=545858&amp;text_color=545858&amp;iconcolor=545858&amp;hide_border=false&amp;bg_color=f5fcff&amp;border_radius=0&amp;count_private=true&amp;include_all_commits=true"
-                  loading="lazy"
-                >
-            
-                <img class="widgets__contributions"
-                  src="https://streak-stats.demolab.com?user=HyunCafe&amp;theme=highcontrast&amp;hide_border=false&amp;border_radius=0&amp;ring=909397&amp;background=f5fcff&amp;fire=545858&amp;currStreakNum=545858&amp;dates=545858&amp;sideNums=545858&amp;currStreakLabel=545858&amp;stroke=545858&amp;sideLabels=545858"
-                  loading="lazy"
-                >
-              </div>
+              <img class="widgets__contributions"
+                src="https://streak-stats.demolab.com?user=HyunCafe&amp;theme=highcontrast&amp;hide_border=false&amp;border_radius=0&amp;ring=909397&amp;background=f5fcff&amp;fire=545858&amp;currStreakNum=545858&amp;dates=545858&amp;sideNums=545858&amp;currStreakLabel=545858&amp;stroke=545858&amp;sideLabels=545858"
+                loading="lazy">
             </div>
-            
+          </div>
+
+
           <ul class="project-list">
             <li class="project-list__item">
               <a class="project-list__link" href="https://github.com/HyunCafe/odin-etchasketch">
@@ -169,24 +162,26 @@
                 <img class="project-list__img" src="assets/dashboard.gif" alt="Personal Dashboard" loading="lazy" />
               </a>
             </li>
-          </ul>     
+          </ul>
         </div>
 
         <aside class="user-profile-sidebar">
           <div class="spotify-playlist">
-            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn" loading="lazy" ></iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn" loading="lazy"></iframe>
           </div>
           <div class="user-tasks__list">
-            <iframe src="https://trello.com/b/7YXXjPIC.html" ></iframe>
+            <iframe src="https://trello.com/b/7YXXjPIC.html"></iframe>
           </div>
         </aside>
-        
-      </main>
 
-      <footer class="footer">
-        <p class="footer-text">2023 HyunCafe</p>
-      </footer>
+    </main>
+
+    <footer class="footer">
+      <p class="footer-text">2023 HyunCafe</p>
+    </footer>
     </div>
-    <script src="script.js" defer></script>
-  </body>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+
 </html>

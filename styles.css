@@ -27,31 +27,58 @@ video {
   z-index: -1;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-  grid-template-rows: minmax(12em, 1fr) 4fr;
-  min-height: 100vh;
-}
-
 a {
   text-decoration: none;
   color: #545858;
   text-shadow: 2px 2px 2px 2px #fffeff;
 }
 
-/* --------------------------------- Hero banner styles ------------------------------------ */
-.hero {
-  position: relative;
+/* --------------------------------- Main Section styles ------------------------------------ */
+
+.container {
+  display: grid;
+  grid-template-columns: 13% 1fr;
+}
+
+.content-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.main-section {
   display: flex;
   flex-direction: column;
+}
+
+.content-container {
   grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1em;
+}
+
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* --------------------------------- Hero banner styles ------------------------------------ */
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 16em;
   justify-content: space-between;
   border: none;
   background-color: rgba(245, 252, 255, 0.2);
   backdrop-filter: blur(5px);
   box-shadow: 2px 2px 20px 2px #828a8d;
+  margin-bottom: 1em;
+  margin-left: 1em;
 }
+
 
 .quickview {
   display: flex;
@@ -117,27 +144,26 @@ button {
 }
 
 .dashboard-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 13%;
-  background: rgba( 255, 255, 255, 0.25 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
+  width: 100%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .nav-list {
+  position: sticky;
+  top: 0;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 2em;
   gap: 2.5em;
   flex: 1;
 }
+
 
 .material-icons {
   transform: translateY(5px);
@@ -149,25 +175,6 @@ button {
   background-size: 40%;
   background-position: -3px;
   padding-left: 25px;
-}
-
-/* --------------------------------- Main Section styles ------------------------------------ */
-.main-section {
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
-  padding: 2em;
-}
-
-.content-container {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 1em;
-}
-
-.left-column {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
 }
 
 /* --------------------------------- Github Widget styles ------------------------------------ */
@@ -182,8 +189,10 @@ button {
 
 .widgets__graph {}
 
-.widgets__stats,
-.widgets__contributions {}
+.bottom-widgets-container {
+  display: flex;
+  justify-content: center;
+}
 
 .user-tasks__list {
   display: flex;
@@ -255,6 +264,8 @@ button {
   flex: 1;
   margin: 0 auto;
   z-index: 0;
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
 /* --------------------------------- Media Queries styles ------------------------------------ */
